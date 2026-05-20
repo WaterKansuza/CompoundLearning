@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Compound Learning</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <section class="top-left">
+            <p>Compound Learning</p>
+        </section>
+        <nav class="goto">
+            <button onclick="showPage(homePage)" id="goto-home-page">Home</button>
+            <button onclick="showPage(timerPage)" id="goto-timer">Timer</button>
+            <button onclick="showPage(musicPage)" id="goto-music">Music</button>
+        </nav>
+        <section class="top-right">
+            <div id="light-dark">O</div>
+            <div id="profile">O</div>
+        </section>
+    </header>
+
+    <main>
+        <div id="home-page">Home</div>
+        <div id="timer">
+            <h1>Timer</h1>
+            <div class="timeChar">
+                <span id="hour"></span>
+                <span id="min">00</span>
+                :
+                <span id="sec">00</span>
+            </div>
+
+            <div class="timer-button">
+                <input id="startButton" type="button" value="Start">
+                <input id="pauseButton" type="button" value="Pause">
+                <input id="resumeButton" type="button" value="Resume">
+                <input id="resetButton" type="button" value="Reset">
+
+                <!-- <input id="restartButton" type="button" value="Restart"> -->
+            </div>
+        </div>
+        <div id="music">Music</div>
+    </main>
+
+    <script src="js/changePage.js"></script>
+    <script src="js/timer.js"></script>
+    <!-- Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap');
+    </style>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

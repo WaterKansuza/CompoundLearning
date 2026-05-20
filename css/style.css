@@ -1,0 +1,124 @@
+/*Name varieble*/
+:root {
+    --Deep-Navy: #0F1A2B;
+    --Ivory: #BDC4D4;
+    --eng-font: "Cause", cursive;
+    --Midnight-Blue: #1C2E4A
+}
+
+body {
+    /*background-color: #2E3440;*/
+    background-color: var(--Deep-Navy);
+    color: white;
+    font-family: var(--eng-font);
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+    align-items: center;
+    justify-content: center;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    z-index: 100;
+
+    background-color: var(--Deep-Navy);
+}
+
+.top-left,
+.goto,
+.top-right {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.goto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5%
+}
+
+.top-left {
+    padding-left: 16px;
+    justify-content: flex-start;
+
+    font-weight: bold;
+}
+
+.top-right {
+    padding-right: 16px;
+    justify-content: flex-end;
+}
+
+#goto-timer,
+#goto-home-page,
+#goto-music {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: white;
+    color: var(--Deep-Navy);
+    font-family: var(--eng-font);
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-page,
+#timer,
+#music {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+main {
+    margin-top: 80px;
+}
+
+.timeChar {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 256px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#startButton,
+#pauseButton,
+#resumeButton,
+#resetButton {
+    border: none;
+    font-family: var(--eng-font);
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+
+}
+
+.timer-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    gap: 1%;
+}
