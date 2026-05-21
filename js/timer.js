@@ -64,10 +64,17 @@ startButton.addEventListener("click", function () {
     Clock.start();
     hideLayer(startButton)
     showButton(pauseButton)
+});
+pauseButton.addEventListener("click", function () {
+    Clock.pause();
+    hideLayer(pauseButton)
     showButton(resumeButton)
 });
-pauseButton.addEventListener("click", function () { Clock.pause(); });
-resumeButton.addEventListener("click", function () { Clock.resume(); });
+resumeButton.addEventListener("click", function () {
+    Clock.resume();
+    showButton(pauseButton)
+    hideLayer(resumeButton)
+});
 resetButton.addEventListener("click", function () {
     Clock.reset();
     showButton(startButton)
