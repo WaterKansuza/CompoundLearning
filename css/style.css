@@ -189,13 +189,53 @@ header {
     transition: all 0.3s ease;
 }
 
+.nav-label {
+    display: flex;
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    font-size: 32px;
+    top: 110%;
+    width: 130px;
+
+    color: var(--white);
+
+    background: var(--Midnight-Blue);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.89);
+
+    /* backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125); */
+
+    text-align: center;
+    justify-content: center;
+}
+
 #goto-timer:hover,
 #goto-home-page:hover,
 #goto-music:hover {
     transform: translateY(-3px);
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.08);
     background-color: var(--Midnight-Blue);
-    color: white;
+}
+
+#goto-timer:hover .nav-label,
+#goto-home-page:hover .nav-label,
+#goto-music:hover .nav-label {
+    opacity: 1;
+}
+
+#goto-timer:hover .nav-icon svg,
+#goto-home-page:hover .nav-icon svg,
+#goto-music:hover .nav-icon svg {
+    stroke: var(--white);
 }
 
 #home-page,
@@ -285,4 +325,32 @@ main {
     overflow: visible;
     stroke: var(--Deep-Navy);
 
+}
+
+#timer {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    padding: 36px 32px;
+    margin: 0px auto;
+    max-width: 1040px;
+}
+
+.timer-page {
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.125);
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 48em;
+
+
+}
+
+#timer h1 {
+    margin: 0;
 }

@@ -23,7 +23,7 @@ var Clock = {
                 return val > 9 ? val : "0" + val;
             }
             function hour(val) {
-                return val > 0 ? val + ":" : "";
+                return val > 0 ? val + " :" : "";
             }
             this.interval = setInterval(function () {
                 self.totalSeconds += 1;

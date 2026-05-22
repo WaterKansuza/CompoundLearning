@@ -43,7 +43,7 @@
                             d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                     </svg>
                 </span>
-                <!-- <span class="nav-label">Home</span> -->
+                <span class="nav-label">Home</span>
             </button>
             <button onclick="showPage(timerPage)" id="goto-timer">
                 <span class="nav-icon">
@@ -53,9 +53,8 @@
                         <circle cx="12" cy="12" r="10" />
                         <path d="M12 6v6h4" />
                     </svg>
-
                 </span>
-                <!-- <span class="nav-label">Time</span> -->
+                <span class="nav-label">Time</span>
             </button>
             <button onclick="showPage(musicPage)" id="goto-music">
                 <span class="nav-icon">
@@ -67,7 +66,7 @@
                         <circle cx="18" cy="16" r="3" />
                     </svg>
                 </span>
-                <!-- <span class="nav-label">Music</span> -->
+                <span class="nav-label">Music</span>
             </button>
         </nav>
         <section class="top-right">
@@ -79,69 +78,71 @@
     <main>
         <div id="home-page">Home</div>
         <div id="timer">
-            <h1>Timer</h1>
-            <div class="timeChar">
-                <span id="hour"></span>
-                <span id="min">00</span>
-                :
-                <span id="sec">00</span>
-            </div>
+            <div class="timer-page">
+                <h1>Timer</h1>
+                <div class="timeChar">
+                    <span id="hour"></span>
+                    <span id="min">00</span>
+                    :
+                    <span id="sec">00</span>
+                </div>
 
-            <div class="timer-button">
+                <div class="timer-button">
 
-                <button id="startButton">
-                    <span class="time-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-play-icon lucide-play">
-                            <path
-                                d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
-                        </svg>
-                    </span>
-                    <span class="time-label">Start</span>
-                </button>
+                    <button id="startButton">
+                        <span class="time-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-play-icon lucide-play">
+                                <path
+                                    d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
+                            </svg>
+                        </span>
+                        <span class="time-label">Start</span>
+                    </button>
 
-                <button id="pauseButton">
-                    <span class="time-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-pause-icon lucide-pause">
-                            <rect x="14" y="3" width="5" height="18" rx="1" />
-                            <rect x="5" y="3" width="5" height="18" rx="1" />
-                        </svg>
-                    </span>
-                    <span class="time-label">Pause</span>
-                </button>
+                    <button id="pauseButton">
+                        <span class="time-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-pause-icon lucide-pause">
+                                <rect x="14" y="3" width="5" height="18" rx="1" />
+                                <rect x="5" y="3" width="5" height="18" rx="1" />
+                            </svg>
+                        </span>
+                        <span class="time-label">Pause</span>
+                    </button>
 
-                <button id="resumeButton">
-                    <span class="time-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-play-icon lucide-play">
-                            <path
-                                d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
-                        </svg>
-                    </span>
-                    <span class="time-label">Resume</span>
-                </button>
+                    <button id="resumeButton">
+                        <span class="time-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-play-icon lucide-play">
+                                <path
+                                    d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
+                            </svg>
+                        </span>
+                        <span class="time-label">Resume</span>
+                    </button>
 
-                <button id="resetButton">
-                    <span class="time-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-rotate-ccw-icon lucide-rotate-ccw">
-                            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-                            <path d="M3 3v5h5" />
-                        </svg>
-                    </span>
-                    <span class="time-label">Reset</span>
-                </button>
-                <!-- <input id="startButton" type="button" value="Start">
+                    <button id="resetButton">
+                        <span class="time-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-rotate-ccw-icon lucide-rotate-ccw">
+                                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+                                <path d="M3 3v5h5" />
+                            </svg>
+                        </span>
+                        <span class="time-label">Reset</span>
+                    </button>
+                    <!-- <input id="startButton" type="button" value="Start">
                 <input id="pauseButton" type="button" value="Pause">
                 <input id="resumeButton" type="button" value="Resume">
                 <input id="resetButton" type="button" value="Reset"> -->
 
-                <!-- <input id="restartButton" type="button" value="Restart"> -->
+                    <!-- <input id="restartButton" type="button" value="Restart"> -->
+                </div>
             </div>
         </div>
         <div id="music">Music</div>
